@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--Grey-900);
+}
+.container {
+  background-color: var(--Grey-800);
+  width: 390px;
+  height: 615px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.imagePerfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.nameTitle {
+  font-family: "Inter", system-ui;
+  font-weight: 700;
+  color: var(--White);
+}
+.nameLocation {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  color: var(--Green);
+  font-weight: 600;
+  font-size: 18px;
+  margin: 12px 0px 30px 0px;
+}
+.text {
+  font-size: 0.875rem;
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: var(--White);
+  margin-bottom: 30px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Grey-700);
+  margin-bottom: 16px;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  transition: 800ms;
+}
+.links:hover {
+  background-color: var(--Green);
+  cursor: pointer;
+  .linktext {
+    color: var(--Grey-700);
+  }
+}
+.linktext {
+  font-family: "Inter", system-ui;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 16px;
+  align-items: center;
+}
